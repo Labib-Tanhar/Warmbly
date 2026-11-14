@@ -1,0 +1,26 @@
+{
+  "forwardPorts": [
+    5173,
+    5174,
+    8080,
+    4000
+  ],
+  "portsAttributes": {
+    "5173": {
+      "label": "Warmbly Web",
+      "visibility": "public"
+    },
+    "5174": {
+      "label": "Warmbly Admin",
+      "visibility": "public"
+    },
+    "8080": {
+      "label": "Warmbly API",
+      "visibility": "public"
+    },
+    "4000": {
+      "label": "Warmbly Realtime",
+      "visibility": "public"
+    }
+  }
+}
