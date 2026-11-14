@@ -1,26 +1,32 @@
 {
+  "name": "Warmbly",
   "forwardPorts": [
     5173,
-    5174,
     8080,
+    5174,
     4000
   ],
   "portsAttributes": {
     "5173": {
       "label": "Warmbly Web",
-      "visibility": "public"
-    },
-    "5174": {
-      "label": "Warmbly Admin",
-      "visibility": "public"
+      "visibility": "public",
+      "onAutoForward": "openBrowserOnce"
     },
     "8080": {
       "label": "Warmbly API",
-      "visibility": "public"
+      "visibility": "public",
+      "onAutoForward": "silent"
+    },
+    "5174": {
+      "label": "Warmbly Admin",
+      "visibility": "public",
+      "onAutoForward": "silent"
     },
     "4000": {
       "label": "Warmbly Realtime",
-      "visibility": "public"
+      "visibility": "public",
+      "onAutoForward": "silent"
     }
-  }
+  },
+  "postStartCommand": "bash /workspaces/Warmbly/start-warmbly.sh"
 }
